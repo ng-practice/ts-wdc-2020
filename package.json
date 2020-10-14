@@ -1,0 +1,21 @@
+{
+  "name": "ts-wdc-2020",
+  "version": "1.0.0",
+  "description": "project for the advanced typescript workshop@wdc2020",
+  "main": "dist/app.js",
+  "author": "frank.strieter@co-IT.eu",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "typescript": "4.0.3",
+    "ts-node": "9.0.0",
+    "nodemon": "2.0.5",
+    "yarn": "1.22.10"
+  },
+  "scripts": {
+    "build": "yarn tsc",
+    "build:watch": "yarn tsc --watch",
+    "start": "ts-node app.ts --watch",
+    "start:watch": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts"
+  }
+}
