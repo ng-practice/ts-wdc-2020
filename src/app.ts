@@ -62,11 +62,11 @@ const address: CustomerAddress = {
 
 const addresses: CustomerAddress[] = []
 
-function findAdresses(field: keyof CustomerAddress, query: string) {
-    addresses.filter(address => address[field] === query)
+function findAdresses(field: keyof CustomerAddress, query: string): CustomerAddress[] {
+    return addresses.filter(address => address[field] === query)
 }
 
-const filteredAdresses = findAdresses('city', 'Chemnitz')
+const filteredAdresses: CustomerAddress[] = findAdresses('city', 'Chemnitz')
 
 
 const urgentOrders = Object.values(orders).filter((order ) => {
