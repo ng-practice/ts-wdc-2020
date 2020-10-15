@@ -1,5 +1,8 @@
-import { Order } from './order';
+import {Order, UrgentOrder} from './order';
 
 export class OrderList {
-  items: Order[] = [];
+  items: {
+    [key: string]: Order
+  } = {}
+
 }

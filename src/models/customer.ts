@@ -1,10 +1,10 @@
 export class Customer {
-  guid: number
-  customerNumber: string
-  firstname: string
-  lastname: string
-  companyName: string
-  street: string
-  zipCode: string
-  city: string
+  guid: string  | undefined
+  customerNumber: string | undefined
+  firstname: string | undefined
+  lastname: string | undefined
+  companyName: string| undefined
+  street: string | undefined
+  zipCode: string | undefined
+  city: 'Leipzig' | 'Berlin' | 'Chemnitz' | undefined
 }
